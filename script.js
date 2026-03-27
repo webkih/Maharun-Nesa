@@ -15,25 +15,27 @@ navLinks.querySelectorAll('a').forEach((link) => {
   });
 });
 
-// Generate gallery from local images/1.jpg to images/20.jpg
+// Generate gallery from available local images to avoid broken entries
 const galleryGrid = document.getElementById('galleryGrid');
-for (let i = 1; i <= 20; i += 1) {
+const galleryImageIds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 18];
+
+galleryImageIds.forEach((id, index) => {
   const item = document.createElement('button');
   item.className = 'gallery-item';
   item.type = 'button';
-  item.setAttribute('aria-label', `Open gallery image ${i}`);
+  item.setAttribute('aria-label', `Open gallery image ${index + 1}`);
 
   const img = document.createElement('img');
-  img.src = `images/${i}.jpg`;
-  img.alt = `Maharun Nesa Mukti gallery image ${String(i).padStart(2, '0')}`;
+  img.src = `images/${id}.jpg`;
+  img.alt = `Maharun Nesa Mukti gallery image ${String(index + 1).padStart(2, '0')}`;
   img.loading = 'lazy';
 
   const caption = document.createElement('span');
-  caption.textContent = `Image ${String(i).padStart(2, '0')}`;
+  caption.textContent = `Image ${String(index + 1).padStart(2, '0')}`;
 
   item.append(img, caption);
   galleryGrid.appendChild(item);
-}
+});
 
 // Lightbox behavior
 const lightbox = document.getElementById('lightbox');
