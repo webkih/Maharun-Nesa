@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="IFY2026 verification page for Maharun Nesa Mukti featuring certificates and extracurricular documentation." />
+  <title>IFY2026 | Maharun Nesa Mukti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="ify2026">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="container nav" aria-label="Main navigation">
+      <a href="index.html#hero" class="brand">Maharun Nesa Mukti</a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#impact">Impact</a></li>
+        <li><a href="index.html#sphere">Sphere of Activity</a></li>
+        <li><a href="index.html#interests">Interests</a></li>
+        <li><a href="ify2026.html" class="active">IFY2026</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="section page-hero" id="hero">
+      <div class="container reveal">
+        <p class="eyebrow">Global Applications • Verified Portfolio Evidence</p>
+        <h1>IFY2026 – Certifications &amp; Verifications</h1>
+        <p class="section-intro">This section provides documented proof of achievements, participation, and engagement to support international applications, scholarship evaluations, and funding consideration processes.</p>
+        <div class="hero-cta">
+          <a href="#certifications" class="btn btn-primary">View Certifications</a>
+          <a href="index.html#hero" class="btn btn-secondary">Back to Home</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="certifications">
+      <div class="container reveal">
+        <h2>Certification Gallery</h2>
+        <p class="section-intro">A curated visual archive of extracurricular and formal participation documents, presented for transparent international verification.</p>
+        <!-- Certification cards are generated dynamically from eca1.jpg to eca12.jpg -->
+        <div class="gallery-grid cert-gallery" id="certGallery"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p><strong>Maharun Nesa Mukti</strong> — Leadership through service, scholarship, and cultural excellence.</p>
+      <ul class="quick-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#sphere">Sphere of Activity</a></li>
+        <li><a href="index.html#readiness">Readiness</a></li>
+        <li><a href="ify2026.html">IFY2026</a></li>
+      </ul>
+      <p>© <span id="year"></span> Maharun Nesa Mukti. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Expanded certificate image">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">×</button>
+    <img id="lightboxImage" src="" alt="Expanded certification" />
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

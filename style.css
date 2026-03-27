@@ -96,6 +96,24 @@ a { color: inherit; text-decoration: none; }
 h2 { font-size: clamp(1.8rem, 1.2rem + 2vw, 2.8rem); margin-top: 0; }
 .section-intro { color: var(--text-muted); max-width: 78ch; }
 
+.page-hero {
+  min-height: 42vh;
+  display: grid;
+  align-items: center;
+}
+
+.sphere-grid,
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.sphere-card {
+  border-color: rgba(186, 149, 255, 0.42);
+}
+
+
 .hero {
   min-height: calc(100vh - 72px);
   position: relative;
@@ -264,6 +282,7 @@ h1 {
   transition: transform 0.4s ease;
 }
 .gallery-item:hover img { transform: scale(1.06); }
+.gallery-item:hover { box-shadow: 0 0 0 1px rgba(186, 149, 255, 0.45), 0 14px 32px rgba(108, 54, 191, 0.35); }
 .gallery-item span {
   position: absolute;
   bottom: 0;
@@ -390,11 +409,19 @@ h1 {
   .gallery-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  .cert-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 1024px) {
   .gallery-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .cert-gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -426,4 +453,14 @@ h1 {
   .stats-grid { grid-template-columns: 1fr; }
   .hero-cta { flex-direction: column; }
   .btn { text-align: center; }
+}
+
+
+.cert-gallery .gallery-item img {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.cert-gallery .gallery-item span {
+  letter-spacing: 0.3px;
 }
