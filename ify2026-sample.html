@@ -1,2 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="IFY2026 sample media page containing supporting image and video materials." />
+  <title>IFY2026 Sample | Maharun Nesa Mukti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="ify2026-sample">
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-<h1>Hello World</h1>
+  <header class="site-header" id="top">
+    <nav class="container nav" aria-label="Main navigation">
+      <a href="index.html#hero" class="brand">Maharun Nesa Mukti</a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#impact">Impact</a></li>
+        <li><a href="index.html#sphere">Sphere of Activity</a></li>
+        <li><a href="index.html#interests">Interests</a></li>
+        <li><a href="ify2026.html">IFY2026</a></li>
+        <li><a href="ify2026-sample.html" class="active">IFY2026 Sample</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="section page-hero" id="hero">
+      <div class="container reveal">
+        <p class="eyebrow">Media Supporting Documents</p>
+        <h1>IFY2026 Sample Media Showcase</h1>
+        <p class="section-intro">This section presents one sample image and two sample video files from <code>images/ify2026-sample</code>, organized in the same visual style as the rest of the site.</p>
+        <div class="hero-cta">
+          <a href="#sample-media" class="btn btn-primary">View Media</a>
+          <a href="ify2026.html" class="btn btn-secondary">Back to IFY2026 PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sample-media">
+      <div class="container reveal">
+        <h2>Sample Assets</h2>
+        <p class="section-intro">All assets are rendered directly on-page and can be opened externally for detailed review.</p>
+
+        <div class="media-grid">
+          <article class="media-card">
+            <div class="media-card-head">
+              <h3>Sample Image</h3>
+              <a href="images/ify2026-sample/sample-image.jpg" target="_blank" rel="noopener">Open file</a>
+            </div>
+            <img src="images/ify2026-sample/sample-image.jpg" alt="IFY2026 sample supporting image" loading="lazy" decoding="async" />
+          </article>
+
+          <article class="media-card">
+            <div class="media-card-head">
+              <h3>Sample Video 1</h3>
+              <a href="images/ify2026-sample/sample-video-1.mp4" target="_blank" rel="noopener">Open file</a>
+            </div>
+            <video controls preload="metadata" playsinline>
+              <source src="images/ify2026-sample/sample-video-1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </article>
+
+          <article class="media-card">
+            <div class="media-card-head">
+              <h3>Sample Video 2</h3>
+              <a href="images/ify2026-sample/sample-video-2.mp4" target="_blank" rel="noopener">Open file</a>
+            </div>
+            <video controls preload="metadata" playsinline>
+              <source src="images/ify2026-sample/sample-video-2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p><strong>Maharun Nesa Mukti</strong> — Leadership through service, scholarship, and cultural excellence.</p>
+      <ul class="quick-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#sphere">Sphere of Activity</a></li>
+        <li><a href="index.html#readiness">Readiness</a></li>
+        <li><a href="ify2026.html">IFY2026</a></li>
+        <li><a href="ify2026-sample.html">IFY2026 Sample</a></li>
+      </ul>
+      <p>© <span id="year"></span> Maharun Nesa Mukti. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

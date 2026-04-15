@@ -464,3 +464,84 @@ h1 {
 .cert-gallery .gallery-item span {
   letter-spacing: 0.3px;
 }
+
+.doc-card,
+.media-card {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1rem;
+}
+
+.doc-card-head,
+.media-card-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.8rem;
+}
+
+.doc-card-head h3,
+.media-card-head h3 {
+  margin: 0;
+}
+
+.doc-card-head p {
+  margin: 0.2rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.doc-card-head span {
+  color: var(--purple-soft);
+}
+
+.media-card-head a {
+  color: var(--purple-soft);
+  font-weight: 600;
+}
+
+.pdf-viewer-wrap {
+  border: 1px solid rgba(186, 149, 255, 0.25);
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(7, 6, 12, 0.85);
+}
+
+.pdf-viewer {
+  width: 100%;
+  min-height: 70vh;
+  border: 0;
+  display: block;
+}
+
+.media-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.media-card img,
+.media-card video {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid rgba(186, 149, 255, 0.25);
+  background: #07060d;
+}
+
+.media-card img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+@media (min-width: 900px) {
+  .media-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .media-grid .media-card:first-child {
+    grid-column: 1 / -1;
+  }
+}
